@@ -37,3 +37,4 @@ coverage/
 tmp/
 temp/
 node_modules
+.vercel

@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
 import { Mail, MapPin, Instagram, Send } from 'lucide-react';
-import { Button } from './ui/button';
-import { Input } from './ui/input';
-import { Textarea } from './ui/textarea';
-import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
+import { Button } from './ui/button-simple';
+import { Input } from './ui/input-simple';
+import { Textarea } from './ui/textarea-simple';
+import { Card, CardContent, CardHeader, CardTitle } from './ui/card-simple';
 import { useState } from 'react';
 
 export function ContactSection() {

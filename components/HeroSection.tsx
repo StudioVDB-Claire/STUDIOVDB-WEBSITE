@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
-import { ArrowDown, Sparkles } from 'lucide-react';
-import { Button } from './ui/button';
+import { ArrowDown } from 'lucide-react';
+import { Button } from './ui/button-simple';
 
 export function HeroSection() {
   const scrollToAbout = () => {
