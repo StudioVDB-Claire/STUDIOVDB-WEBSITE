@@ -79,7 +79,8 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="text-xl sm:text-2xl lg:text-3xl text-white/90 mb-8 max-w-4xl mx-auto"
+          className="text-xl sm:text-2xl lg:text-3xl mb-8 max-w-4xl mx-auto"
+          style={{ color: '#ADF5FF' }}
         >
           Your ideas, our playground.
         </motion.p>
@@ -94,7 +95,8 @@ export function HeroSection() {
             <Button
               onClick={scrollToAbout}
               size="lg"
-              className="bg-accent text-accent-foreground hover:bg-accent/90 px-8 py-6 text-lg rounded-none"
+              className="px-8 py-6 text-lg rounded-none bg-transparent hover:bg-transparent"
+              style={{ color: '#443627' }}
             >
               Learn More
             </Button>
@@ -105,7 +107,8 @@ export function HeroSection() {
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               variant="outline"
               size="lg"
-              className="border-accent text-accent hover:bg-accent hover:text-accent-foreground px-8 py-6 text-lg rounded-none"
+              className="px-8 py-6 text-lg rounded-none border-2"
+              style={{ backgroundColor: '#ADF5FF', color: '#443627', borderColor: '#ADF5FF' }}
             >
               Get In Touch
             </Button>
@@ -122,9 +125,9 @@ export function HeroSection() {
             onClick={scrollToAbout}
             animate={{ y: [0, 10, 0] }}
             transition={{ duration: 2, repeat: Infinity }}
-            className="p-2 rounded-full bg-accent/20 hover:bg-accent/40 transition-colors"
+            className="p-2 rounded-full transition-colors bg-transparent hover:bg-transparent"
           >
-            <ArrowDown size={24} className="text-accent" />
+            <ArrowDown size={24} style={{ color: '#443627' }} />
           </motion.button>
         </motion.div>
       </div>

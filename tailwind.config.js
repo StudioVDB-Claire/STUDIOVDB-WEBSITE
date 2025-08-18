@@ -22,6 +22,8 @@ export default {
         'prosto-one': ['Prosto One', 'sans-serif'],
         'deuterium': ['Prosto One', 'sans-serif'],
         'base': ['system-ui', '-apple-system', 'sans-serif'],
+        'nunito-sans': ['Nunito Sans', 'sans-serif'],
+        'heading': ['Nunito Sans', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",

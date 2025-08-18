@@ -7,7 +7,6 @@ export function Navigation() {
   const [activeSection, setActiveSection] = useState('home');
 
   const navItems = [
-    { id: 'home', label: 'Home' },
     { id: 'about', label: 'About' },
     { id: 'services', label: 'Services' },
     { id: 'work', label: 'Work' },
@@ -26,8 +25,10 @@ export function Navigation() {
       { threshold: 0.5 }
     );
 
-    navItems.forEach((item) => {
-      const element = document.getElementById(item.id);
+    // Observe all navigation items plus the home section
+    const allSections = [...navItems.map(item => item.id), 'home'];
+    allSections.forEach((sectionId) => {
+      const element = document.getElementById(sectionId);
       if (element) observer.observe(element);
     });
 
@@ -48,16 +49,22 @@ export function Navigation() {
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-lg border-b border-border"
+        className="fixed top-0 left-0 right-0 z-50 backdrop-blur-lg border-b border-[#D80C0C]"
+        style={{ backgroundColor: '#D80C0C' }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <motion.div
+            <motion.button
+              onClick={() => scrollToSection('home')}
               whileHover={{ scale: 1.05 }}
-              className="text-lg text-white font-deuterium-ultra"
+              className="flex items-center"
             >
-             Studio VDB
-            </motion.div>
+              <img 
+                src="/VDBheader.png" 
+                alt="Studio VDB" 
+                className="h-8 w-auto"
+              />
+            </motion.button>
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-8">
@@ -67,9 +74,12 @@ export function Navigation() {
                   onClick={() => scrollToSection(item.id)}
                   className={`px-3 py-2 rounded-lg transition-all duration-300 ${
                     activeSection === item.id
-                      ? 'text-primary bg-primary/10'
-                      : 'text-white hover:text-primary'
+                      ? 'bg-[#FFF9A5]/20'
+                      : 'hover:bg-[#ADF5FF]/10'
                   }`}
+                  style={{ 
+                    color: activeSection === item.id ? '#FFF9A5' : '#ADF5FF'
+                  }}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -81,7 +91,8 @@ export function Navigation() {
             {/* Mobile menu button */}
             <motion.button
               onClick={() => setIsOpen(!isOpen)}
-              className="md:hidden p-2 rounded-lg hover:bg-muted text-white"
+              className="md:hidden p-2 rounded-lg hover:bg-[#ADF5FF]/10"
+              style={{ color: '#ADF5FF' }}
               whileTap={{ scale: 0.95 }}
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -94,7 +105,8 @@ export function Navigation() {
           initial={false}
           animate={{ height: isOpen ? 'auto' : 0, opacity: isOpen ? 1 : 0 }}
           transition={{ duration: 0.3 }}
-          className="md:hidden overflow-hidden bg-background/95 backdrop-blur-lg border-t border-border"
+          className="md:hidden overflow-hidden backdrop-blur-lg border-t border-[#D80C0C]"
+          style={{ backgroundColor: '#D80C0C' }}
         >
           <div className="px-4 py-4 space-y-2">
             {navItems.map((item) => (
@@ -103,9 +115,12 @@ export function Navigation() {
                 onClick={() => scrollToSection(item.id)}
                 className={`block w-full text-left px-3 py-2 rounded-lg transition-all duration-300 ${
                   activeSection === item.id
-                    ? 'text-primary bg-primary/10'
-                    : 'text-white hover:text-primary hover:bg-muted'
+                    ? 'bg-[#FFF9A5]/20'
+                    : 'hover:bg-[#ADF5FF]/10'
                 }`}
+                style={{ 
+                  color: activeSection === item.id ? '#FFF9A5' : '#ADF5FF'
+                }}
                 whileHover={{ x: 10 }}
                 whileTap={{ scale: 0.98 }}
               >

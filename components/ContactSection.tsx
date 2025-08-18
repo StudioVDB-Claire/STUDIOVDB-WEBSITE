@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Mail, MapPin, Instagram, Send } from 'lucide-react';
+import { Mail, MapPin, Instagram, Send, Linkedin } from 'lucide-react';
 import { Button } from './ui/button-simple';
 import { Input } from './ui/input-simple';
 import { Textarea } from './ui/textarea-simple';
@@ -45,7 +45,7 @@ export function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-20 relative overflow-hidden bg-background">
+    <section id="contact" className="py-20 relative overflow-hidden" style={{ backgroundColor: '#ADF5FF' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -54,11 +54,11 @@ export function ContactSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl mb-6 text-primary font-deuterium-ultra">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl mb-6 nunito-sans-black" style={{ color: '#443627' }}>
             Let's Work Together
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            If you're building something with heart and ambition—I'd love to hear from you.
+          <p className="text-xl max-w-3xl mx-auto" style={{ color: '#443627' }}>
+            If you're building something with heart and ambition - I'd love to hear from you.
           </p>
         </motion.div>
 
@@ -70,9 +70,9 @@ export function ContactSection() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <Card className="bg-card border-border">
+            <Card className="border-2" style={{ backgroundColor: '#443627', borderColor: '#443627' }}>
               <CardHeader>
-                <CardTitle className="text-2xl text-primary font-deuterium-ultra">
+                <CardTitle className="text-2xl nunito-sans-black" style={{ color: '#ADF5FF' }}>
                   Send Me a Message
                 </CardTitle>
               </CardHeader>
@@ -85,7 +85,7 @@ export function ContactSection() {
                       transition={{ duration: 0.5, delay: 0.1 }}
                       viewport={{ once: true }}
                     >
-                      <label htmlFor="name" className="block mb-2 text-sm">Name</label>
+                      <label htmlFor="name" className="block mb-2 text-sm" style={{ color: '#ADF5FF' }}>Name</label>
                       <Input
                         id="name"
                         name="name"
@@ -93,7 +93,8 @@ export function ContactSection() {
                         onChange={handleChange}
                         placeholder="Your Name"
                         required
-                        className="bg-input-background border-border focus:border-primary"
+                        className="border-2"
+                        style={{ backgroundColor: '#ADF5FF', borderColor: '#ADF5FF', color: '#443627' }}
                       />
                     </motion.div>
                     <motion.div
@@ -102,7 +103,7 @@ export function ContactSection() {
                       transition={{ duration: 0.5, delay: 0.2 }}
                       viewport={{ once: true }}
                     >
-                      <label htmlFor="email" className="block mb-2 text-sm">Email</label>
+                      <label htmlFor="email" className="block mb-2 text-sm" style={{ color: '#ADF5FF' }}>Email</label>
                       <Input
                         id="email"
                         name="email"
@@ -111,7 +112,8 @@ export function ContactSection() {
                         onChange={handleChange}
                         placeholder="your@email.com"
                         required
-                        className="bg-input-background border-border focus:border-primary"
+                        className="border-2"
+                        style={{ backgroundColor: '#ADF5FF', borderColor: '#ADF5FF', color: '#443627' }}
                       />
                     </motion.div>
                   </div>
@@ -122,7 +124,7 @@ export function ContactSection() {
                     transition={{ duration: 0.5, delay: 0.3 }}
                     viewport={{ once: true }}
                   >
-                    <label htmlFor="subject" className="block mb-2 text-sm">Subject</label>
+                    <label htmlFor="subject" className="block mb-2 text-sm" style={{ color: '#ADF5FF' }}>Subject</label>
                     <Input
                       id="subject"
                       name="subject"
@@ -130,7 +132,8 @@ export function ContactSection() {
                       onChange={handleChange}
                       placeholder="Project inquiry"
                       required
-                      className="bg-input-background border-border focus:border-primary"
+                      className="border-2"
+                      style={{ backgroundColor: '#ADF5FF', borderColor: '#ADF5FF', color: '#443627' }}
                     />
                   </motion.div>
                   
@@ -140,7 +143,7 @@ export function ContactSection() {
                     transition={{ duration: 0.5, delay: 0.4 }}
                     viewport={{ once: true }}
                   >
-                    <label htmlFor="message" className="block mb-2 text-sm">Message</label>
+                    <label htmlFor="message" className="block mb-2 text-sm" style={{ color: '#ADF5FF' }}>Message</label>
                     <Textarea
                       id="message"
                       name="message"
@@ -149,7 +152,8 @@ export function ContactSection() {
                       placeholder="Tell me about your project..."
                       rows={6}
                       required
-                      className="bg-input-background border-border focus:border-primary resize-none"
+                      className="border-2 resize-none"
+                      style={{ backgroundColor: '#ADF5FF', borderColor: '#ADF5FF', color: '#443627' }}
                     />
                   </motion.div>
                   
@@ -164,7 +168,8 @@ export function ContactSection() {
                     <Button
                       type="submit"
                       size="lg"
-                      className="w-full bg-primary text-primary-foreground hover:bg-primary/90 rounded-none"
+                      className="w-full rounded-none"
+                      style={{ backgroundColor: '#D80C0C', color: '#ADF5FF' }}
                     >
                       <Send size={20} className="mr-2" />
                       Send Message
@@ -184,14 +189,29 @@ export function ContactSection() {
             className="space-y-8"
           >
             <div>
-              <h3 className="text-2xl mb-6 text-accent font-deuterium-ultra">Get In Touch</h3>
-              <p className="text-muted-foreground mb-8 leading-relaxed">
+              <h3 className="text-2xl mb-6 nunito-sans-black" style={{ color: '#443627' }}>Get In Touch</h3>
+              <p className="mb-8 leading-relaxed" style={{ color: '#443627', opacity: 0.8 }}>
                 Ready to discuss your project? Whether you need a complete brand overhaul or just want to chat about possibilities, I'm here to help bring your vision to life.
               </p>
             </div>
 
-            {/* Contact Information */}
-            <div className="space-y-4">
+            {/* Logo and Contact Information */}
+            <div className="space-y-6">
+              {/* Logo */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true }}
+                className="flex justify-center mb-8"
+              >
+                <img
+                  src="/VDBheader.png"
+                  alt="Studio VDB Logo"
+                  className="h-16 w-auto object-contain"
+                />
+              </motion.div>
+
               {contactInfo.map((info, index) => (
                 <motion.a
                   key={info.title}
@@ -201,40 +221,61 @@ export function ContactSection() {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   viewport={{ once: true }}
                   whileHover={{ x: 10, scale: 1.02 }}
-                  className="flex items-center p-4 bg-card border border-border hover:border-primary/50 transition-all duration-300 group"
+                  className="flex items-center p-4 border-2 hover:border-primary/50 transition-all duration-300 group"
+                  style={{ backgroundColor: '#443627', borderColor: '#443627' }}
                 >
                   <motion.div
                     whileHover={{ scale: 1.1 }}
-                    className="w-12 h-12 bg-primary flex items-center justify-center mr-4 transition-all duration-300"
+                    className="w-12 h-12 flex items-center justify-center mr-4 transition-all duration-300"
+                    style={{ backgroundColor: '#D80C0C' }}
                   >
-                    <info.icon size={20} className="text-white" />
+                    <info.icon size={20} style={{ color: '#ADF5FF' }} />
                   </motion.div>
                   <div>
-                    <div className="text-sm text-muted-foreground">{info.title}</div>
-                    <div className="text-foreground">{info.value}</div>
+                    <div className="text-sm" style={{ color: '#ADF5FF', opacity: 0.8 }}>{info.title}</div>
+                    <div style={{ color: '#ADF5FF' }}>{info.value}</div>
                   </div>
                 </motion.a>
               ))}
-            </div>
 
-            {/* Social Links */}
-            <div>
-              <h4 className="text-lg mb-4 text-accent font-deuterium-ultra">Follow Studio VDB</h4>
-              <motion.a
-                href="https://instagram.com/studiovdb"
-                target="_blank"
-                rel="noopener noreferrer"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-                viewport={{ once: true }}
-                whileHover={{ scale: 1.05, y: -2 }}
-                whileTap={{ scale: 0.95 }}
-                className="inline-flex items-center space-x-3 w-auto bg-primary text-white px-6 py-3 transition-all duration-300 hover:bg-primary/90"
-              >
-                <Instagram size={20} />
-                <span>@studiovdb</span>
-              </motion.a>
+              {/* Social Links positioned under location */}
+              <div className="mt-6">
+                <h4 className="text-lg mb-4 nunito-sans-black" style={{ color: '#443627' }}>Follow Studio VDB</h4>
+                <div className="flex space-x-4">
+                  <motion.a
+                    href="https://linkedin.com/company/studiovdb"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                    viewport={{ once: true }}
+                    whileHover={{ scale: 1.05, y: -2 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="inline-flex items-center space-x-3 px-6 py-3 transition-all duration-300"
+                    style={{ backgroundColor: '#D80C0C', color: '#ADF5FF' }}
+                  >
+                    <Linkedin size={20} />
+                    <span>LinkedIn</span>
+                  </motion.a>
+                  <motion.a
+                    href="https://instagram.com/studiovdb"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.1 }}
+                    viewport={{ once: true }}
+                    whileHover={{ scale: 1.05, y: -2 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="inline-flex items-center space-x-3 px-6 py-3 transition-all duration-300"
+                    style={{ backgroundColor: '#D80C0C', color: '#ADF5FF' }}
+                  >
+                    <Instagram size={20} />
+                    <span>Instagram</span>
+                  </motion.a>
+                </div>
+              </div>
             </div>
           </motion.div>
         </div>
