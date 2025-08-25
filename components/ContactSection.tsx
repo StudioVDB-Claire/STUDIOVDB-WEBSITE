@@ -13,6 +13,8 @@ export function ContactSection() {
     subject: '',
     message: ''
   });
+  
+  const [showSuccessPopup, setShowSuccessPopup] = useState(false);
 
   const contactInfo = [
     {
@@ -29,12 +31,41 @@ export function ContactSection() {
     }
   ];
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-    // Reset form
-    setFormData({ name: '', email: '', subject: '', message: '' });
+    
+    try {
+      // Using your Formspree endpoint
+      const response = await fetch('https://formspree.io/f/mpwjaeap', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        }),
+      });
+
+      if (response.ok) {
+        // Show success popup
+        setShowSuccessPopup(true);
+        // Reset form
+        setFormData({ name: '', email: '', subject: '', message: '' });
+        // Hide popup after 3 seconds
+        setTimeout(() => {
+          setShowSuccessPopup(false);
+        }, 3000);
+      } else {
+        throw new Error('Failed to send message');
+      }
+    } catch (error) {
+      console.error('Error sending form:', error);
+      // You might want to show an error message to the user here
+      alert('Failed to send message. Please try again or contact me directly at claire@studiovdb.com.au');
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -243,7 +274,7 @@ export function ContactSection() {
                 <h4 className="text-lg mb-4 nunito-sans-black" style={{ color: '#443627' }}>Follow Studio VDB</h4>
                 <div className="flex space-x-4">
                   <motion.a
-                    href="https://linkedin.com/company/studiovdb"
+                    href="https://www.linkedin.com/company/studio-vdb"
                     target="_blank"
                     rel="noopener noreferrer"
                     initial={{ opacity: 0, y: 20 }}
@@ -259,7 +290,7 @@ export function ContactSection() {
                     <span>LinkedIn</span>
                   </motion.a>
                   <motion.a
-                    href="https://instagram.com/studiovdb"
+                    href="https://instagram.com/studiovdb___"
                     target="_blank"
                     rel="noopener noreferrer"
                     initial={{ opacity: 0, y: 20 }}
@@ -280,6 +311,28 @@ export function ContactSection() {
           </motion.div>
         </div>
       </div>
+
+      {/* Success Popup */}
+      {showSuccessPopup && (
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8, y: 50 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          exit={{ opacity: 0, scale: 0.8, y: 50 }}
+          className="fixed bottom-8 right-8 z-50 bg-white border-2 border-[#D80C0C] rounded-lg shadow-lg p-6 max-w-sm"
+        >
+          <div className="flex items-center space-x-3">
+            <div className="w-8 h-8 bg-[#D80C0C] rounded-full flex items-center justify-center">
+              <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <div>
+              <h4 className="text-lg font-semibold text-[#443627]">Message Sent!</h4>
+              <p className="text-sm text-[#443627]/80">Thank you for reaching out. I'll get back to you soon.</p>
+            </div>
+          </div>
+        </motion.div>
+      )}
     </section>
   );
 }

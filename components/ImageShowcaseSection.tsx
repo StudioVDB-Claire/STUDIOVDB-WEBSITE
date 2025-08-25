@@ -14,7 +14,7 @@ export function ImageShowcaseSection() {
           className="flex-1 md:flex-[1.2] h-1/2 md:h-full relative overflow-hidden group"
         >
           <ImageWithFallback
-            src="/MC1.jpg"
+            src="Phone.png"
             alt="Studio VDB Creative Work 1"
             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
           />
@@ -25,7 +25,7 @@ export function ImageShowcaseSection() {
           </div>
         </motion.div>
 
-        {/* Portrait Image - Right/Bottom */}
+        {/* Portrait Video - Right/Bottom */}
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -33,9 +33,12 @@ export function ImageShowcaseSection() {
           viewport={{ once: true }}
           className="flex-1 h-1/2 md:h-full relative overflow-hidden group"
         >
-          <ImageWithFallback
-            src="/MC3.jpeg"
-            alt="Studio VDB Creative Work 2"
+          <video
+            src="/MintaroCottage.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all duration-500" />

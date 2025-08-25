@@ -152,62 +152,60 @@
  * Base typography. This is not applied to elements which have an ancestor with a Tailwind text class.
  */
 @layer base {
-  :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) {
-    h1 {
-      font-size: var(--text-2xl);
-      font-weight: 400;
-      line-height: 1.2;
-      font-family: var(--font-family-title);
-    }
+  :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) :is(h1) {
+    font-size: var(--text-2xl);
+    font-weight: 400;
+    line-height: 1.2;
+    font-family: var(--font-family-title);
+  }
 
-    h2 {
-      font-size: var(--text-xl);
-      font-weight: 400;
-      line-height: 1.3;
-      font-family: var(--font-family-title);
-    }
+  :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) :is(h2) {
+    font-size: var(--text-xl);
+    font-weight: 400;
+    line-height: 1.3;
+    font-family: var(--font-family-title);
+  }
 
-    h3 {
-      font-size: var(--text-lg);
-      font-weight: 400;
-      line-height: 1.4;
-      font-family: var(--font-family-title);
-    }
+  :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) :is(h3) {
+    font-size: var(--text-lg);
+    font-weight: 400;
+    line-height: 1.4;
+    font-family: var(--font-family-title);
+  }
 
-    h4 {
-      font-size: var(--text-base);
-      font-weight: 400;
-      line-height: 1.5;
-      font-family: var(--font-family-title);
-    }
+  :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) :is(h4) {
+    font-size: var(--text-base);
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: var(--font-family-title);
+  }
 
-    p {
-      font-size: var(--text-base);
-      font-weight: var(--font-weight-normal);
-      line-height: 1.6;
-      font-family: var(--font-family-base);
-    }
+  :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) :is(p) {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-normal);
+    line-height: 1.6;
+    font-family: var(--font-family-base);
+  }
 
-    label {
-      font-size: var(--text-base);
-      font-weight: var(--font-weight-medium);
-      line-height: 1.5;
-      font-family: var(--font-family-base);
-    }
+  :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) :is(label) {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+    font-family: var(--font-family-base);
+  }
 
-    button {
-      font-size: var(--text-base);
-      font-weight: var(--font-weight-medium);
-      line-height: 1.5;
-      font-family: var(--font-family-base);
-    }
+  :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) :is(button) {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+    font-family: var(--font-family-base);
+  }
 
-    input {
-      font-size: var(--text-base);
-      font-weight: var(--font-weight-normal);
-      line-height: 1.5;
-      font-family: var(--font-family-base);
-    }
+  :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) :is(input) {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-normal);
+    line-height: 1.5;
+    font-family: var(--font-family-base);
   }
 }
 

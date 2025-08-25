@@ -68,7 +68,7 @@ export function HeroSection() {
           className="mb-6 flex justify-center"
         >
           <img 
-            src="/StudioVDB.png" 
+            src="/VDBheader.png" 
             alt="Studio VDB Logo" 
             className="w-[300px] sm:w-[400px] lg:w-[500px] h-auto object-contain"
 

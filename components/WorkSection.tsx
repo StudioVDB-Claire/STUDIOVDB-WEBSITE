@@ -7,21 +7,33 @@ const projects = [
   {
     id: 1,
     title: "SA Grounds and Gardens",
-    subtitle: "Complete brand identity and web presence for tech startup",
-    image: "/SAGGWebsite.png",
-    heroimage: "/SAGG.png",
+    image: "SAGG Tree.jpeg",
     landscapeImages: [
-      "/SAGG-landscape1.jpg",
-      "/SAGG-landscape2.jpg", 
-      "/SAGG-landscape3.jpg"
+      "Billboard SAGG.png",
+      " "
+    ],
+    landscapeVideos: [
+      "SAGGhomepage.mp4",
+      "SAGG Video.mov"
     ],
     portraitImages: [
-      "/SAGG-portrait1.jpg",
-      "/SAGG-portrait2.jpg"
+      "Businesscards.png",
+      "SAGGDesktop.jpeg",
+      "Hiring.png"
     ],
+    portraitImageLinks: [
+      "Phone.png",
+    ],
+    landscapeImageLinks: [
+      "#", // Link for first landscape image
+      "#", // Link for second landscape image
+      "#"  // Link for third landscape image
+    ],
+    videoLink: "SAGG Video.mov", // Link for the video
     slug: "sa-grounds-and-gardens",
-    description: "A comprehensive digital transformation project that redefined how this tech startup connects with their audience. We created a bold, modern brand identity paired with an intuitive web platform that converts visitors into customers.",
-    services: ["Brand Identity", "Web Design", "Digital Strategy", "UX/UI Design", "Social Media Management"],
+    description: "SA Grounds & Gardens is a South Australian commercial landscaping business built on precision, care, and reliability. Now, with a brand identity, digital presence, and marketing strategy newly established, the company is redefining what it means to be a modern grounds and garden service. From tailor designed maintenance programs to standout visual branding, SA Grounds & Gardens is committed to keeping spaces thriving while presenting a professional image that reflects the quality of their work.",
+    services: ["Full Brand Build", "Marketing Foundations", "Website Launch", "Graphic Design", "Marketing Collateral", "Operational Digital Transformation Support"],
+    subdescription: "From the ground up we created:\n\nWhen SA Grounds and Gardens first came to me they had a solid reputation in landscaping through word of mouth but no brand identity, website or marketing.\n\n**Brand Direction:** Worked together to define their vision, voice, and look so the brand reflected their core culture and felt as professional as the work they do.\n\n**Logo & Identity:** Designed a fresh new logo and full brand guidelines, giving them a consistent style across every touchpoint.\n\n**Collateral Design:** Business cards, uniform artwork, and vehicle branding - so the brand shows up in real life, not just online.\n\n**Digital Presence** → Launched a fully responsive, SEO-friendly website plus Google Business, Meta, Insta, LinkedIn - the whole digital toolkit.\n\n**Marketing Foundations:** Built custom social templates, content calendars, and a strategy that makes ongoing marketing simple and effective.\n\n**The glow-up?**\n\nSA Grounds & Gardens went from invisible online to looking like the landscaping brand to watch. Now they've got a sharp identity, a site that works as hard as they do, and the confidence to stand out in a competitive market.",
     year: "2025",
     website: "https://www.sagroundsandgardens.com.au",
     client: "SA Grounds and Gardens"
@@ -29,40 +41,52 @@ const projects = [
   {
     id: 2,
     title: "Mintaro Cottage",
-    subtitle: "E-commerce platform and marketing strategy for sustainable coffee brand",
-    image: "/MintaroCottage.png",
-    heroimage: "/MC.png",
+    subtitle: " ",
+    image: "MintaroCottage.png",
     landscapeImages: [
-      "https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=800&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=800&h=400&fit=crop"
+      "MC1.jpg",
+    ],
+    landscapeVideos: [
+      "MintaroCottage.mp4",
+      "Mintaro Cottage - Cooking Dinner(1).mp4"
     ],
     portraitImages: [
-      "https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=400&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&h=600&fit=crop"
+      "bees.png",
+      "MC3.jpeg"
     ],
-    slug: "organic-coffee-co",
-    description: "From bean to cup, we crafted every touchpoint of this sustainable coffee brand's digital presence. The e-commerce platform we built doubled their online sales while their new marketing strategy grew their social following by 300%.",
-    services: ["E-commerce Development", "Marketing Strategy", "Social Media", "Photography"],
+    portraitImageLinks: [
+      "bees.png",
+      "reviewmc.png",
+    ],
+    landscapeImageLinks: [
+      " "
+    ],
+    videoLink: "Mintaro Cottage - Cooking Dinner(1).mp4", // Link for MintaroCottage.mp4
+    slug: "Mintaro-Cottage",
+    description: "Mintaro Cottage is a boutique South Australian accommodation offering that blends heritage charm with modern comfort. Now, with tailored marketing, refreshed design, and digital support, the cottage now has a polished online presence that reflects the charm and warmth of the experience it offers guests. From brand-aligned graphics to seamless website updates, Mintaro Cottage is positioned to attract new visitors and showcase its unique story in style.",
+    services: ["Marketing Strategy", "Graphic Design", "Website Support", "Content Creation", "Photography and Videography"],
+    subdescription: "What we delivered:\n\n**Marketing Support:** Developed strategies and campaigns to strengthen their visibility and connect with the right audience.\n\n**Graphic Design:** Created marketing collateral and digital assets that visually matched the charm and authenticity of the property.\n\n**Website Support:** Provided design and content updates to ensure the website stayed fresh, user-friendly, and optimised for conversions.\n\n**Content Creation:** Delivered engaging visuals and messaging to highlight the guest experience and drive bookings.\n\n**The glow-up?**\n\nMintaro Cottage now has the digital presence to match its timeless character — making it easier than ever for travellers to discover, connect, and book their next stay.",
     year: "2024",
-    client: "Bean & Brew Co."
+    client: "Mintaro Cottage"
   },
   {
     id: 3,
-    title: "Coming soon",
+    title: "Coming Soon",
     subtitle: " ",
-    heroimage: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&h=600&fit=crop",
-    landscapeImages: [
-      
-    ],
-    portraitImages: [
-      
-    ],
-    slug: "Creative-agency-rebrand",
-    description: "Coming soon",
-    services: ["Brand Strategy", "Visual Identity", "Website Design", "E-Commerce"],
+    image: "SMIX.png",
+    heroimage:"https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80",
+    landscapeImages: [],
+    landscapeVideos: [],
+    portraitImages: [],
+    portraitImageLinks: [],
+    landscapeImageLinks: [],
+    videoLink: "#",
+    slug: "coming-soon",
+    description: "Something new is in the works. Quietly being built. Carefully designed. Patiently refined.",
+    services: ["Still under wraps."],
+    subdescription: "What we delivered (so far):\n\nConcepts shaping into something bigger.\n\nFoundations being laid for a whole new experience.\n\nDetails hidden (for now).\n\n**Creative Direction:** Ideas are evolving into something bold, modern, and unlike the rest.\n\n**Design Support:** Crafting visuals that hint at what's next - without giving the game away.\n\n**Digital Build:** Constructing a platform that feels seamless, intuitive, and future-ready.\n\n**The glow-up?**\n\nYou'll see it soon. But for now, think of this as the calm before the glow.",
     year: "2025",
-    client: "Coming soon"
+    client: "TBA"
   }
 ];
 
@@ -97,8 +121,8 @@ export function WorkSection() {
   };
 
   return (
-    <section id="work" className="h-screen bg-[#443627] flex items-center justify-center relative overflow-hidden">
-      <div className="w-full h-full flex flex-col">
+    <section id="work" className="min-h-screen bg-[#443627] flex items-center justify-center relative overflow-hidden py-8">
+      <div className="w-full min-h-screen flex flex-col">
         {/* Section Title */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -113,7 +137,7 @@ export function WorkSection() {
         </motion.div>
 
         {/* Carousel - Full Width */}
-        <div className="flex-1 relative pb-20">
+        <div className="flex-1 relative pb-8 min-h-[80vh]">
           {/* Navigation Arrows */}
           <button
             onClick={prevSlide}
@@ -130,7 +154,7 @@ export function WorkSection() {
           </button>
 
           {/* Carousel Container - Full Width No Rounded Corners */}
-          <div className="h-full w-full overflow-hidden mb-16">
+          <div className="h-full w-full overflow-hidden mb-8 min-h-[70vh]">
             {/* Mobile: Single project view */}
             <div className="md:hidden h-full">
               {projects.map((project, index) => (
@@ -147,49 +171,31 @@ export function WorkSection() {
                   transition={{ duration: 0.6, ease: "easeInOut" }}
                   onClick={() => handleProjectClick(project)}
                 >
-                  <div className="relative w-full h-full group">
-                    {/* Hero Image */}
-                    <div className="absolute inset-0">
+                  <div className="relative w-full h-full group flex flex-col">
+                    {/* Hero Image - Takes up most of the space */}
+                    <div className="flex-1 relative">
                       <ImageWithFallback
                         src={project.image}
                         alt={project.title}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover object-center"
                       />
                       {/* Overlay */}
-                      <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-all duration-300" />
+                      <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-all duration-300" />
                     </div>
 
-                    {/* Content */}
-                    <div className="relative z-10 h-full flex items-end">
-                      <div className="w-full p-8" style={{ backgroundColor: '#443627' }}>
+                    {/* Content - Fixed height at bottom */}
+                    <div className="relative z-20 h-20 flex items-center">
+                      <div className="w-full p-1" style={{ backgroundColor: '#443627' }}>
                         <div className="text-white">
-                          <motion.h3
-                            initial={{ y: 30, opacity: 0 }}
-                            animate={{ y: 0, opacity: 1 }}
-                            transition={{ delay: 0.3, duration: 0.6 }}
-                            className="text-3xl sm:text-4xl nunito-sans-black mb-4 group-hover:text-primary-foreground transition-colors"
-                          >
+                          <h3 className="text-xl sm:text-1xl nunito-sans-black mb-2 text-white line-clamp-2 leading-tight">
                             {project.title}
-                          </motion.h3>
-                          <motion.p
-                            initial={{ y: 30, opacity: 0 }}
-                            animate={{ y: 0, opacity: 1 }}
-                            transition={{ delay: 0.5, duration: 0.6 }}
-                            className="text-lg text-white/90 max-w-2xl leading-relaxed"
-                          >
-                            {project.subtitle}
-                          </motion.p>
+                          </h3>
                           
                           {/* Click indicator */}
-                          <motion.div
-                            initial={{ y: 30, opacity: 0 }}
-                            animate={{ y: 0, opacity: 1 }}
-                            transition={{ delay: 0.7, duration: 0.6 }}
-                            className="mt-6 flex items-center gap-2 text-white/70 group-hover:text-white transition-colors"
-                          >
+                          <div className="flex items-center gap-2 text-white/70 group-hover:text-white transition-colors">
                             <span className="text-sm uppercase tracking-wider">View Project</span>
                             <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                          </motion.div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -209,28 +215,25 @@ export function WorkSection() {
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   onClick={() => handleProjectClick(project)}
                 >
-                  <div className="relative w-full h-full overflow-hidden">
-                    {/* Hero Image */}
-                    <div className="absolute inset-0">
+                  <div className="relative w-full h-full overflow-hidden flex flex-col">
+                    {/* Hero Image - Takes up most of the space */}
+                    <div className="flex-1 relative">
                       <ImageWithFallback
                         src={project.image}
                         alt={project.title}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover object-center"
                       />
                       {/* Overlay */}
-                      <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-all duration-300" />
+                      <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-all duration-300" />
                     </div>
 
-                    {/* Content */}
-                    <div className="relative z-10 h-full flex items-end">
-                      <div className="w-full p-8" style={{ backgroundColor: '#443627' }}>
+                    {/* Content - Fixed height at bottom */}
+                    <div className="relative z-10 h-28 flex items-center">
+                      <div className="w-full p-4" style={{ backgroundColor: '#443627' }}>
                         <div className="text-white">
-                          <h3 className="text-3xl lg:text-4xl xl:text-5xl nunito-sans-black mb-4 group-hover:text-primary-foreground transition-colors">
+                          <h3 className="text-xl lg:text-2xl xl:text-3xl nunito-sans-black mb-2 text-white line-clamp-2 leading-tight">
                             {project.title}
                           </h3>
-                          <p className="text-base lg:text-lg xl:text-xl text-white/90 leading-relaxed mb-6">
-                            {project.subtitle}
-                          </p>
                           
                           {/* Click indicator */}
                           <div className="flex items-center gap-2 text-white/70 group-hover:text-white transition-colors">
@@ -247,12 +250,12 @@ export function WorkSection() {
           </div>
 
           {/* Dots Indicator - Moved outside and lower */}
-          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-3 z-30">
+          <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-2 z-30">
             {projects.map((_, index) => (
               <button
                 key={index}
                 onClick={() => setCurrentIndex(index)}
-                className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                className={`w-2 h-2 rounded-full transition-all duration-300 ${
                   index === currentIndex 
                     ? 'bg-[#F18F01] scale-125' 
                     : 'bg-[#F18F01]/40 hover:bg-[#F18F01]/60'
@@ -282,110 +285,502 @@ export function WorkSection() {
                 animate={{ x: 0, opacity: 1 }}
                 exit={{ x: "100%", opacity: 0 }}
                 transition={{ duration: 0.4, ease: "easeInOut" }}
-                className="fixed top-0 right-0 h-full w-full md:w-1/2 lg:w-2/5 bg-white z-50 overflow-y-auto"
+                className="fixed top-0 right-0 h-full w-full md:w-3/5 lg:w-3/5 z-50 overflow-y-auto bg-white"
               >
                 {/* Close Button */}
                 <button
                   onClick={closePopup}
-                  className="absolute top-6 right-6 z-10 w-10 h-10 bg-black/10 hover:bg-black/20 backdrop-blur-sm rounded-full flex items-center justify-center transition-all duration-300 group"
+                  className="absolute top-6 right-6 z-10 w-10 h-10 bg-black/20 hover:bg-black/30 backdrop-blur-sm rounded-full flex items-center justify-center transition-all duration-300 group"
                 >
                   <X className="w-5 h-5 text-black group-hover:scale-110 transition-transform" />
                 </button>
 
-                {/* Project Image */}
-                <div className="relative h-64 md:h-80 overflow-hidden">
-                  <ImageWithFallback
-                    src={selectedProject.heroimage || selectedProject.image}
-                    alt={selectedProject.title}
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
-                </div>
+                <section className="w-full flex flex-col">
+                  {/* TITLE */}
+                  <motion.div
+                    className="w-full px-8 sm:px-12 lg:px-16 pt-24 pb-16"
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, ease: 'easeOut' }}
+                    viewport={{ once: true }}
+                  >
+                    <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black leading-[0.9] text-black tracking-tight">
+                      {selectedProject.title}
+                    </h1>
+                  </motion.div>
 
-                {/* Project Content */}
-                <div className="p-8">
-                  {/* Project Meta */}
-                  <div className="flex items-center gap-4 mb-4 text-sm text-gray-600">
-                    <span>{selectedProject.year}</span>
-                    <span>•</span>
-                    <span>{selectedProject.client}</span>
-                  </div>
-
-                  {/* Project Title */}
-                  <h3 className="text-3xl md:text-4xl nunito-sans-black text-gray-900 mb-3">
-                    {selectedProject.title}
-                  </h3>
-
-                  {/* Project Subtitle */}
-                  <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                    {selectedProject.subtitle}
-                  </p>
-
-                  {/* Project Description */}
-                  <div className="mb-8">
-                    <h4 className="text-lg nunito-sans-bold text-gray-900 mb-3">About This Project</h4>
-                    <p className="text-gray-700 leading-relaxed">
+                  {/* DESCRIPTION */}
+                  <motion.div
+                    className="px-8 sm:px-12 lg:px-16 pb-16 max-w-5xl"
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
+                    viewport={{ once: true }}
+                  >
+                    <p className="text-xl sm:text-2xl lg:text-3xl leading-relaxed text-black">
                       {selectedProject.description}
                     </p>
-                  </div>
+                  </motion.div>
 
-                  {/* Services */}
-                  <div className="mb-8">
-                    <h4 className="text-lg nunito-sans-bold text-gray-900 mb-3">Services</h4>
-                    <div className="flex flex-wrap gap-2">
+                  {/* SCOPE */}
+                  <motion.div
+                    className="px-8 sm:px-12 lg:px-16 pb-20"
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 0.8, ease: 'easeOut', delay: 0.3 }}
+                    viewport={{ once: true }}
+                  >
+                    <h3 className="text-lg font-semibold mb-6 text-black uppercase tracking-wide">Scope</h3>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                       {selectedProject.services.map((service, index) => (
-                        <span
-                          key={index}
-                          className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm"
-                        >
+                        <div key={index} className="text-lg text-black">
                           {service}
-                        </span>
+                        </div>
                       ))}
                     </div>
-                  </div>
+                  </motion.div>
 
-                  {/* Landscape Images */}
-                  {selectedProject.landscapeImages && (
-                    <div className="mb-8">
-                      <h4 className="text-lg nunito-sans-bold text-gray-900 mb-4">Project Gallery</h4>
-                      <div className="space-y-4">
-                        {selectedProject.landscapeImages.map((image, index) => (
-                          <div key={index} className="relative h-48 overflow-hidden rounded-lg">
-                            <ImageWithFallback
-                              src={image}
-                              alt={`${selectedProject.title} gallery image ${index + 1}`}
-                              className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                            />
-                          </div>
-                        ))}
-                      </div>
-                    </div>
+                  {/* LANDSCAPE VIDEO - After Scope (SA Grounds and Gardens only) */}
+                  {selectedProject.id === 1 && selectedProject.landscapeVideos && selectedProject.landscapeVideos.length > 0 && selectedProject.landscapeVideos[0] && (
+                    <motion.div
+                      className="w-full relative"
+                      style={{ height: '60vh' }}
+                      initial={{ opacity: 0 }}
+                      whileInView={{ opacity: 1 }}
+                      transition={{ duration: 1, ease: 'easeOut' }}
+                      viewport={{ once: true }}
+                    >
+                      <a 
+                        href={selectedProject.videoLink || "#"} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="block w-full h-full group relative overflow-hidden"
+                      >
+                        <video
+                          src={selectedProject.landscapeVideos[0]}
+                          autoPlay
+                          muted
+                          loop
+                          playsInline
+                          className="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105"
+                        />
+                        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
+                      </a>
+                    </motion.div>
                   )}
 
-                  {/* Portrait Images */}
-                  {selectedProject.portraitImages && (
-                    <div className="mb-8">
-                      <div className="grid grid-cols-2 gap-4">
-                        {selectedProject.portraitImages.map((image, index) => (
-                          <div key={index} className="relative h-64 overflow-hidden rounded-lg">
-                            <ImageWithFallback
-                              src={image}
-                              alt={`${selectedProject.title} detail image ${index + 1}`}
-                              className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  {/* PORTRAIT VIDEOS - After Scope (Mintaro Cottage only) */}
+                  {selectedProject.id === 2 && selectedProject.landscapeVideos && selectedProject.landscapeVideos.length > 0 && (
+                    <motion.div
+                      className="w-full"
+                      initial={{ opacity: 0 }}
+                      whileInView={{ opacity: 1 }}
+                      transition={{ duration: 1, ease: 'easeOut' }}
+                      viewport={{ once: true }}
+                    >
+                      <div className="grid grid-cols-1 sm:grid-cols-2">
+                        {/* First portrait video */}
+                        {selectedProject.landscapeVideos[0] && (
+                          <a 
+                            href={selectedProject.videoLink || "#"} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="block w-full h-[60vh] sm:h-[70vh] lg:h-[80vh] group relative overflow-hidden"
+                          >
+                            <video
+                              src={selectedProject.landscapeVideos[0]}
+                              autoPlay
+                              muted
+                              loop
+                              playsInline
+                              className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
                             />
-                          </div>
-                        ))}
+                            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
+                          </a>
+                        )}
+                        
+                        {/* Second portrait image instead of video */}
+                        {selectedProject.portraitImages && selectedProject.portraitImages[0] && (
+                          <a 
+                            href={selectedProject.portraitImageLinks?.[0] || "#"} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="block w-full h-[60vh] sm:h-[70vh] lg:h-[80vh] group relative overflow-hidden"
+                          >
+                            <ImageWithFallback
+                              src={selectedProject.portraitImages[0]}
+                              alt={`${selectedProject.title} shot 1`}
+                              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                            />
+                            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
+                          </a>
+                        )}
                       </div>
-                    </div>
+                    </motion.div>
+                  )}
+                  {/* FIRST PORTRAIT IMAGES - After landscape video (SA Grounds and Gardens only) */}
+                  {selectedProject.id === 1 && selectedProject.portraitImages && selectedProject.portraitImages.length >= 2 && (
+                    <motion.div
+                      className="w-full"
+                      initial={{ opacity: 0 }}
+                      whileInView={{ opacity: 1 }}
+                      transition={{ duration: 1, ease: 'easeOut', delay: 0.2 }}
+                      viewport={{ once: true }}
+                    >
+                      <div className="grid grid-cols-1 sm:grid-cols-2">
+                        {/* First portrait image - clickable */}
+                        <a 
+                          href={selectedProject.portraitImageLinks?.[0] || "#"} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="block w-full h-[60vh] sm:h-[70vh] lg:h-[80vh] group relative overflow-hidden"
+                        >
+                          <ImageWithFallback
+                            src={selectedProject.portraitImages[0]}
+                            alt={`${selectedProject.title} shot 1`}
+                            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                          />
+                          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
+                        </a>
+                        
+                        {/* Second portrait image - clickable */}
+                        <a 
+                          href={selectedProject.portraitImageLinks?.[1] || "#"} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="block w-full h-[60vh] sm:h-[70vh] lg:h-[80vh] group relative overflow-hidden"
+                        >
+                          <ImageWithFallback
+                            src={selectedProject.portraitImages[1] || selectedProject.portraitImages[0]}
+                            alt={`${selectedProject.title} shot 2`}
+                            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                          />
+                          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
+                        </a>
+                      </div>
+                    </motion.div>
                   )}
 
-                  {/* CTA Button */}
-                  <div className="pt-6 border-t border-gray-200">
-                    <button className="w-full bg-[#443627] text-white py-4 px-6 rounded-lg nunito-sans-semibold hover:bg-[#443627]/90 transition-colors duration-300">
-                      Get In Touch About This Project
-                    </button>
-                  </div>
-                </div>
+
+                  {/* SUB-DESCRIPTION */}
+                  {selectedProject.subdescription && (
+                    <motion.div
+                      className="px-8 sm:px-12 lg:px-16 py-20 max-w-4xl mx-auto"
+                      initial={{ opacity: 0, y: 40 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
+                      viewport={{ once: true }}
+                    >
+                      {/* Process Section */}
+                      <motion.div
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8 }}
+                        viewport={{ once: true }}
+                        className="mb-16"
+                      >
+                        <h3 className="text-2xl sm:text-3xl font-black mb-8 text-black">
+                          {selectedProject.id === 1 ? 'From the ground up we created:' : selectedProject.id === 3 ? 'What we delivered (so far):' : 'What we delivered:'}
+                        </h3>
+                        <p className="text-lg text-gray-700 leading-relaxed mb-8">
+                          {selectedProject.id === 1 
+                            ? 'When SA Grounds and Gardens first came to me they had a solid reputation in landscaping through word of mouth but no brand identity, website or marketing.'
+                            : selectedProject.id === 3
+                            ? 'Concepts shaping into something bigger.\n\nFoundations being laid for a whole new experience.\n\nDetails hidden (for now).'
+                            : 'Tailored marketing, refreshed design, and digital support to strengthen their online presence and attract new visitors.'
+                          }
+                        </p>
+
+                        <div className="space-y-8">
+                          {selectedProject.id === 1 ? [
+                            {
+                              title: 'Brand Direction',
+                              description: 'Worked together to define their vision, voice, and look so the brand reflected their core culture and felt as professional as the work they do.'
+                            },
+                            {
+                              title: 'Logo & Identity',
+                              description: 'Designed a fresh new logo and full brand guidelines, giving them a consistent style across every touchpoint.'
+                            },
+                            {
+                              title: 'Collateral Design',
+                              description: 'Business cards, uniform artwork, and vehicle branding - so the brand shows up in real life, not just online.'
+                            },
+                            {
+                              title: 'Digital Presence',
+                              description: 'Launched a fully responsive, SEO-friendly website plus Google Business, Meta, Insta, LinkedIn - the whole digital toolkit.'
+                            },
+                            {
+                              title: 'Marketing Foundations',
+                              description: 'Built custom social templates, content calendars, and a strategy that makes ongoing marketing simple and effective.'
+                            }
+                          ].map((item, index) => (
+                            <motion.div
+                              key={item.title}
+                              initial={{ opacity: 0, y: 20 }}
+                              whileInView={{ opacity: 1, y: 0 }}
+                              transition={{ duration: 0.6, delay: index * 0.1 }}
+                              viewport={{ once: true }}
+                              className="border-l-2 border-black/30 pl-6"
+                            >
+                              <h4 className="text-xl font-semibold mb-2 text-black">{item.title}:</h4>
+                              <p className="text-gray-700 leading-relaxed">{item.description}</p>
+                            </motion.div>
+                          )) : selectedProject.id === 3 ? [
+                            {
+                              title: 'Creative Direction',
+                              description: 'Ideas are evolving into something bold, modern, and unlike the rest.'
+                            },
+                            {
+                              title: 'Design Support',
+                              description: 'Crafting visuals that hint at what\'s next - without giving the game away.'
+                            },
+                            {
+                              title: 'Digital Build',
+                              description: 'Constructing a platform that feels seamless, intuitive, and future-ready.'
+                            }
+                          ].map((item, index) => (
+                            <motion.div
+                              key={item.title}
+                              initial={{ opacity: 0, y: 20 }}
+                              whileInView={{ opacity: 1, y: 0 }}
+                              transition={{ duration: 0.6, delay: index * 0.1 }}
+                              viewport={{ once: true }}
+                              className="border-l-2 border-black/30 pl-6"
+                            >
+                              <h4 className="text-xl font-semibold mb-2 text-black">{item.title}:</h4>
+                              <p className="text-gray-700 leading-relaxed">{item.description}</p>
+                            </motion.div>
+                          )) : [
+                            {
+                              title: 'Marketing Support',
+                              description: 'Developed strategies and campaigns to strengthen their visibility and connect with the right audience.'
+                            },
+                            {
+                              title: 'Graphic Design',
+                              description: 'Created marketing collateral and digital assets that visually matched the charm and authenticity of the property.'
+                            },
+                            {
+                              title: 'Website Support',
+                              description: 'Provided design and content updates to ensure the website stayed fresh, user-friendly, and optimised for conversions.'
+                            },
+                            {
+                              title: 'Content Creation',
+                              description: 'Delivered engaging visuals and messaging to highlight the guest experience and drive bookings.'
+                            }
+                          ].map((item, index) => (
+                            <motion.div
+                              key={item.title}
+                              initial={{ opacity: 0, y: 20 }}
+                              whileInView={{ opacity: 1, y: 0 }}
+                              transition={{ duration: 0.6, delay: index * 0.1 }}
+                              viewport={{ once: true }}
+                              className="border-l-2 border-black/30 pl-6"
+                            >
+                              <h4 className="text-xl font-semibold mb-2 text-black">{item.title}:</h4>
+                              <p className="text-gray-700 leading-relaxed">{item.description}</p>
+                            </motion.div>
+                          ))}
+                        </div>
+                      </motion.div>
+
+                      {/* Results Section */}
+                      <motion.div
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.2 }}
+                        viewport={{ once: true }}
+                        className="bg-gray-50 rounded-2xl p-8"
+                      >
+                        <h3 className="text-2xl sm:text-3xl font-black mb-4 text-black">
+                          The glow-up?
+                        </h3>
+                        <p className="text-lg text-gray-700 leading-relaxed">
+                          {selectedProject.id === 1 
+                            ? 'SA Grounds & Gardens went from invisible online to looking like the landscaping brand to watch. Now they\'ve got a sharp identity, a site that works as hard as they do, and the confidence to stand out in a competitive market.'
+                            : selectedProject.id === 3
+                            ? 'You\'ll see it soon. But for now, think of this as the calm before the glow.'
+                            : 'Mintaro Cottage now has the digital presence to match its timeless character - making it easier than ever for travellers to discover, connect, and book their next stay.'
+                          }
+                        </p>
+                      </motion.div>
+                    </motion.div>
+                  )}
+
+                  {/* LANDSCAPE IMAGES - RESPONSIVE */}
+                  {selectedProject.landscapeImages && selectedProject.landscapeImages.length > 0 && (
+                    <motion.div
+                      className="w-full"
+                      initial={{ opacity: 0 }}
+                      whileInView={{ opacity: 1 }}
+                      transition={{ duration: 1, ease: 'easeOut', delay: 0.3 }}
+                      viewport={{ once: true }}
+                    >
+                      <div className="">
+                        {selectedProject.landscapeImages.filter(img => img && img.trim() !== '').map((image, index) => (
+                          <a 
+                            key={index}
+                            href={selectedProject.landscapeImageLinks?.[index] || "#"} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="block w-full h-[50vh] sm:h-[60vh] lg:h-[80vh] group relative overflow-hidden"
+                          >
+                            <ImageWithFallback
+                              src={image}
+                              alt={`${selectedProject.title} landscape ${index + 1}`}
+                              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                            />
+                            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
+                          </a>
+                        ))}
+                      </div>
+                    </motion.div>
+                  )}
+
+                  {/* SECOND PORTRAIT IMAGES*/}
+                  {selectedProject.portraitImages && selectedProject.portraitImages.length >= 2 && (
+                    <motion.div
+                      className="w-full"
+                      initial={{ opacity: 0 }}
+                      whileInView={{ opacity: 1 }}
+                      transition={{ duration: 1, ease: 'easeOut', delay: 0.2 }}
+                      viewport={{ once: true }}
+                    >
+                      <div className="grid grid-cols-1 sm:grid-cols-2">
+                        {/* For Mintaro Cottage: Second portrait image */}
+                        {selectedProject.id === 2 && selectedProject.portraitImages[1] && (
+                          <a 
+                            href={selectedProject.portraitImageLinks?.[1] || "#"} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="block w-full h-[60vh] sm:h-[70vh] lg:h-[80vh] group relative overflow-hidden"
+                          >
+                            <ImageWithFallback
+                              src={selectedProject.portraitImages[1]}
+                              alt={`${selectedProject.title} shot 2`}
+                              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                            />
+                            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
+                          </a>
+                        )}
+
+                        {/* For SA Grounds and Gardens: Third portrait image */}
+                        {selectedProject.id === 1 && selectedProject.portraitImages[2] && (
+                          <a 
+                            href={selectedProject.portraitImageLinks?.[2] || "#"} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="block w-full h-[60vh] sm:h-[70vh] lg:h-[80vh] group relative overflow-hidden"
+                          >
+                            <ImageWithFallback
+                              src={selectedProject.portraitImages[2]}
+                              alt={`${selectedProject.title} shot 3`}
+                              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                            />
+                            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
+                          </a>
+                        )}
+                        
+                        {/* For Mintaro Cottage: Video as second item */}
+                        {selectedProject.id === 2 && selectedProject.landscapeVideos && selectedProject.landscapeVideos.length > 0 && (
+                          <a 
+                            href={selectedProject.videoLink || "#"} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="block w-full h-[60vh] sm:h-[70vh] lg:h-[80vh] group relative overflow-hidden"
+                          >
+                            <video
+                              src={selectedProject.landscapeVideos[1] || selectedProject.landscapeVideos[0]}
+                              className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
+                              autoPlay
+                              muted
+                              loop
+                              playsInline
+                            />
+                            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
+                          </a>
+                        )}
+
+                        {/* For SA Grounds and Gardens: Video - clickable */}
+                        {selectedProject.id === 1 && selectedProject.landscapeVideos && selectedProject.landscapeVideos.length > 1 && selectedProject.landscapeVideos[1] ? (
+                          <a 
+                            href={selectedProject.videoLink || "#"} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="block w-full h-[60vh] sm:h-[70vh] lg:h-[80vh] group relative overflow-hidden"
+                          >
+                            <video
+                              src={selectedProject.landscapeVideos[1]}
+                              className="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105"
+                              autoPlay
+                              muted
+                              loop
+                              playsInline
+                            />
+                            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
+                          </a>
+                        ) : selectedProject.id === 1 && selectedProject.landscapeVideos && selectedProject.landscapeVideos.length > 0 && selectedProject.landscapeVideos[0] ? (
+                          <a 
+                            href={selectedProject.videoLink || "#"} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="block w-full h-[60vh] sm:h-[70vh] lg:h-[80vh] group relative overflow-hidden"
+                          >
+                            <video
+                              src={selectedProject.landscapeVideos[0]}
+                              className="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105"
+                              autoPlay
+                              muted
+                              loop
+                              playsInline
+                            />
+                            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
+                          </a>
+                        ) : selectedProject.id === 1 && selectedProject.portraitImages[3] ? (
+                          <a 
+                            href={selectedProject.portraitImageLinks?.[3] || "#"} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="block w-full h-[60vh] sm:h-[70vh] lg:h-[80vh] group relative overflow-hidden"
+                          >
+                            <ImageWithFallback
+                              src={selectedProject.portraitImages[3]}
+                              alt={`${selectedProject.title} shot 4`}
+                              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                            />
+                            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
+                          </a>
+                        ) : null}
+                      </div>
+                    </motion.div>
+                  )}
+
+                  {/* FINAL CTA SECTION */}
+                  <motion.div
+                    className="px-8 sm:px-12 lg:px-16 py-24 bg-gray-50"
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, ease: 'easeOut' }}
+                    viewport={{ once: true }}
+                  >
+                    <div className="max-w-2xl">
+                      <h3 className="text-3xl sm:text-4xl font-bold text-black mb-6">
+                        Ready to start your project?
+                      </h3>
+                      <p className="text-xl text-gray-700 mb-8 leading-relaxed">
+                        Let's create something extraordinary together. Every great project starts with a conversation.
+                      </p>
+                      <button 
+                        onClick={() => {
+                          closePopup();
+                          document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                        }}
+                        className="bg-black text-white px-8 py-4 text-lg font-medium hover:bg-gray-800 transition-colors duration-300"
+                      >
+                        Get In Touch
+                      </button>
+                    </div>
+                  </motion.div>
+                </section>
               </motion.div>
             </>
           )}
